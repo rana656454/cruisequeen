@@ -7,12 +7,13 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
-    background:url("images/ship.png");
+    background:url("images/img1.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: scroll;
     background-size: cover;
 }
+
 nav{
     height: 50px;
     width: 100%;
@@ -29,8 +30,10 @@ nav ul{
     margin: 0px 6px;
 }
 nav ul li a{
-    color: #fff;
+    color: rgb(70, 65, 65);
     padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
     text-transform: uppercase;
     margin-left: 30px;
 }
@@ -45,10 +48,14 @@ nav ul li a:hover, a.active{
     align-items: center;
 }
 .booking-content{
-    color: #fff;
+    background-color: rgba(201, 222, 247, 0.5);
+    padding: 50px;
+    color:rgb(39, 37, 37,0.9);
     width: 100%;
     float: left;
     margin-left: 50px;
+    margin-top: 30px;
+    font-weight: bold;
 }
 .booking-content h1{
     font-size: 70px;
@@ -57,9 +64,9 @@ nav ul li a:hover, a.active{
     font-weight: 500;
 }
 .booking-form{
-    background-color: #fff;
+    background-color: rgb(202, 180, 180,0.7);
     border: 1px solid #ddd;
-    padding: 10px;
+    padding: 30px 10px;
     border-radius: 5px;
     float: right;
     width: 65%;
@@ -116,9 +123,59 @@ nav ul li a:hover, a.active{
     border: none;
     color: #fff;
     font-weight: 500;
-    background-color:  #E33741;
+    background-color: tomato;
 }
 .amount{
     display: flex;
     justify-content: space-between;
+}
+.btn-success{
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: tomato;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#report{
+    display: none;
+    background-color: rgba(206, 225, 250, 0.3);
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    float: right;
+    width: 65%;
+    margin-left: 180px;
+    margin-top: 80px;
+    padding: 60px 70px;
+    text-align: center;
+    line-height: 30px;
+    box-shadow: 1px 1px 2px 2px gainsboro;
+    color: white;
+}
+
+#report h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(39, 37, 37,0.8);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.btn-report{
+    width: 250px;
+    height: 50px;
+    margin-top: 30px;
+    color: white;
+    background-color: rgb(45, 83, 250);
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;   
 }

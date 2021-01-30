@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
+
+      
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -31,11 +33,19 @@
 
         <div class="booking-content">
             <h1>Cruise Queen</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book./p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         </div>
 
+       
+<div id="report">
+    <h2> Welcome Sir !</h2>
+     <h3>You Book (First Class) : <span id="firstclass-report"></span></h3>
+     <h3>You Book (Economy) : <span id="economy-report"></span></h3>
+     <h3>Total Tk (With Vat) : <span id="totaltk-report"></span></h3>
+     <button class="btn-report" id="reportok-btn">Ok</button>
+</div>
 
-        <div class="booking-form">
+        <div class="booking-form" id="form">
             <h3>Book Ocean Time</h3>
             <div class="input-group">
                 <label for="">Flying From</label>
@@ -58,20 +68,22 @@
             <div class="input-group f-class">
                 <div>
                     <label for="">First Class ($150)</label>
-                    <input class="inp-style inp-width" type="number" name="">
+                    <input class="inp-style inp-width" type="text" readonly value="0" id="firstclassbooking-number" name="">
                 </div>
                 <div class="plus-minus-btn">
-                    <p>+ -</p>
+                    <p><button class="btn-success" id="firstclass-plus">+</button>
+                        <button class="btn-success" id="firstclass-minus">-</button></p>
                 </div>
             </div>
             
             <div class="input-group f-class">
                 <div>
                     <label for="">Economy ($100)</label>
-                    <input class="inp-style inp-width" type="number" name="">
+                    <input class="inp-style inp-width" readonly value="0" id="economybooking-number" type="text" name="">
                 </div>
                 <div class="plus-minus-btn">
-                    <p> <span>+</span> <span>-</span> </p>
+                    <p> <button class="btn-success" id="economy-plus">+</button>
+                         <button class="btn-success" id="economy-minus">-</button> </p>
                 </div>
             </div>
             <div class="calculations">
@@ -80,7 +92,7 @@
                         <p>Subtotal</p>
                     </div>
                     <div class="right">
-                        <p>$500</p>
+                        <p>$<span id="subtotal">00</span></p>
                     </div>
                 </div>
 
@@ -89,7 +101,7 @@
                         <p>Charge 10% VAT</p>
                     </div>
                     <div class="right">
-                        <p>$50</p>
+                        <p>$<span id="vat">00</span></p>
                     </div>
                 </div>
                 <hr>
@@ -98,14 +110,18 @@
                         <h4>Total</h4>
                     </div>
                     <div class="right">
-                        <p>$550</p>
+                        <p>$<span id="total">00</span></p>
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button class="btn-style" id="booknow-btn">Book Now</button>
+            
+
         </div>
     </main>
 
+    <script src="main.js"></script>
+  
     <!--Thank You-->
 </body>
 
